@@ -1,6 +1,6 @@
 /*
  using namespace, so we can use System.Console.println() 
- as Console.println() without 'System.'
+ as Console.println() instead of 'System.COnsole.println()'
  Build prject under a folder: dotnet new console
  Run program: dotnet run
  */
@@ -22,8 +22,9 @@ class Name
 
       // Read from console
       string name = Console.ReadLine(); // string is small case?
+      int age = 22;
 
       // writing the string and additional argument to console 
-      Console.WriteLine("Hello, {0}", name); // {0} to embed variable in string
+      Console.WriteLine("Hello, {0}, {1}", name, age); // {0} to embed variable in string
     }
 }

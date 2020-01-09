@@ -1,0 +1,11 @@
+/home/tong/ProgramFile/git/c_sharp/educative/basics/bin/Debug/netcoreapp2.2/basics.deps.json
+/home/tong/ProgramFile/git/c_sharp/educative/basics/bin/Debug/netcoreapp2.2/basics.runtimeconfig.json
+/home/tong/ProgramFile/git/c_sharp/educative/basics/bin/Debug/netcoreapp2.2/basics.runtimeconfig.dev.json
+/home/tong/ProgramFile/git/c_sharp/educative/basics/bin/Debug/netcoreapp2.2/basics.dll
+/home/tong/ProgramFile/git/c_sharp/educative/basics/bin/Debug/netcoreapp2.2/basics.pdb
+/home/tong/ProgramFile/git/c_sharp/educative/basics/obj/Debug/netcoreapp2.2/basics.csprojAssemblyReference.cache
+/home/tong/ProgramFile/git/c_sharp/educative/basics/obj/Debug/netcoreapp2.2/basics.csproj.CoreCompileInputs.cache
+/home/tong/ProgramFile/git/c_sharp/educative/basics/obj/Debug/netcoreapp2.2/basics.AssemblyInfoInputs.cache
+/home/tong/ProgramFile/git/c_sharp/educative/basics/obj/Debug/netcoreapp2.2/basics.AssemblyInfo.cs
+/home/tong/ProgramFile/git/c_sharp/educative/basics/obj/Debug/netcoreapp2.2/basics.dll
+/home/tong/ProgramFile/git/c_sharp/educative/basics/obj/Debug/netcoreapp2.2/basics.pdb

@@ -71,9 +71,8 @@ namespace basics
             }
 
             // ternary condition
-            var c3 = 12; // TODO: has var data type?
+            var c3 = 12; // QUES: has var data type?
             Console.WriteLine((c3 > 10) ? "ternary branch1" : "ternary branch2");
-
 
             /*
             Loops:
@@ -93,13 +92,11 @@ namespace basics
 
             // foreach
             string[] l2 = {"a", "b", "c"};
-            foreach(string s in l2) { // TODO: foreach and in
+            foreach(string s in l2) { // NOTE: foreach and in
                 Console.WriteLine(s);
             }
 
-            //  TODO: jump statement: break, continue, return (for function), throw (throw exception)
-
-
+            //  NOTE: jump statement: break, continue, return (for function), throw (throw exception)
             /*
             Arrays:
              */

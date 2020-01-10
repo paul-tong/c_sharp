@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/tong/ProgramFile/git/c_sharp/study1/HelloWorld/HelloWorld.csproj": {}
+    "/home/tong/ProgramFile/git/c_sharp/educative/method/method.csproj": {}
   },
   "projects": {
-    "/home/tong/ProgramFile/git/c_sharp/study1/HelloWorld/HelloWorld.csproj": {
+    "/home/tong/ProgramFile/git/c_sharp/educative/method/method.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tong/ProgramFile/git/c_sharp/study1/HelloWorld/HelloWorld.csproj",
-        "projectName": "HelloWorld",
-        "projectPath": "/home/tong/ProgramFile/git/c_sharp/study1/HelloWorld/HelloWorld.csproj",
+        "projectUniqueName": "/home/tong/ProgramFile/git/c_sharp/educative/method/method.csproj",
+        "projectName": "method",
+        "projectPath": "/home/tong/ProgramFile/git/c_sharp/educative/method/method.csproj",
         "packagesPath": "/home/tong/.nuget/packages/",
-        "outputPath": "/home/tong/ProgramFile/git/c_sharp/study1/HelloWorld/obj/",
+        "outputPath": "/home/tong/ProgramFile/git/c_sharp/educative/method/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"

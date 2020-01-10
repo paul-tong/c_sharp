@@ -106,10 +106,11 @@ namespace basics
                 Console.WriteLine(s);
             }
 
+            //  NOTE: jump statement: break, continue, return (for function), throw (throw exception)
+
 
 
             ///////////////////////////////////////////////////////////////////
-            //  NOTE: jump statement: break, continue, return (for function), throw (throw exception)
             /*
             Arrays:
              */

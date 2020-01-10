@@ -6,6 +6,7 @@ namespace basics
     {
         static void Main(string[] args)
         {
+            ///////////////////////////////////////////////////////////////////
             /*
             variable:
             1.like a box with name, complier connects variable name with memory address
@@ -19,6 +20,9 @@ namespace basics
             double vd = double.Parse("10.5");
             Console.WriteLine("vi: {0}, vd: {1}", vi, vd);
             
+
+
+            ///////////////////////////////////////////////////////////////////
             /*
             Operators:
              */
@@ -31,6 +35,9 @@ namespace basics
             a += 6; // a = a + 6;
             Console.WriteLine(a);
 
+
+
+            ///////////////////////////////////////////////////////////////////
             /* 
             Conditions:
             */
@@ -74,6 +81,9 @@ namespace basics
             var c3 = 12; // QUES: has var data type?
             Console.WriteLine((c3 > 10) ? "ternary branch1" : "ternary branch2");
 
+
+
+            ///////////////////////////////////////////////////////////////////
             /*
             Loops:
              */
@@ -96,11 +106,86 @@ namespace basics
                 Console.WriteLine(s);
             }
 
+
+
+            ///////////////////////////////////////////////////////////////////
             //  NOTE: jump statement: break, continue, return (for function), throw (throw exception)
             /*
             Arrays:
              */
             Console.WriteLine("\nArrays:");
+
+            // NOTE: static array, allocate in complie time, in memory stack
+            int[] arr1 = {1, 2, 3}; 
+            foreach (var num in arr1) { // NOTE: foreach + use var
+                Console.WriteLine("arr1: " + num);
+            }
+
+            // NOTE: dynamic array, allocate in run time, in memory head 
+            int[] arr2 = new int[3]; // NOTE: initial value is 0
+            for (int i = 0; i < arr2.Length; i++) {
+                Console.WriteLine("arr2: " + arr2[i]);
+            }
+
+            /*
+            NOTE: static array inital: int[] arr = {1, 3}
+            dynamic array inital: int[] arr = new int[]{1, 3}
+            */
+            int[] arr3 = new int[]{5, 6, 7}; // dynamic initialize
+            foreach (int num in arr3) {
+                Console.WriteLine("arr3: " + num);
+            }
+            
+            /* mutile dimension array
+            QUES: size must be fixed, array in the same dimension has same length?
+            QUES: how to iterate it?
+            */
+            int[,] arr4 = new int[2, 2] {{1, 2}, {3, 4}};
+            arr4[1, 1] = 5;
+            Console.WriteLine(arr4[0, 0]);
+            Console.WriteLine(arr4[1, 1]);
+
+            // NOTE: total length, number of all elements. Not number of dimensions
+            int totalLength = arr4.Length; 
+            Console.WriteLine("lenth: " + totalLength);
+
+            // NOTE: iterate multiDimensional array: arry.Rank, arr.GetLength(i)
+            for (int i = 0; i < arr4.Rank; i++) { // for each dimension
+                int dimensionLength = arr4.GetLength(i); // NOTE: length of this dimension
+                for (int j = 0; j < dimensionLength; j++) {
+                    Console.WriteLine("arr4: " + arr4[i, j]);
+                }
+            }
+
+            /*jagged array: is array of arrays
+            NOTE: multidimensional arrays are limited to a fixed number of rows and columns, 
+            while jagged arrays, every row can have a different number of columns.
+            */
+            // NOTE: new int[2][3] is invalid, second length cannot be fixed
+            // NOTE: arr5[0] = {1, 2} is invalid, must use new int[]{} when initailization (dymamic array)
+            int[][] arr5 = new int[2][]; 
+            arr5[0] = new int[]{1,2 ,3};
+            arr5[1] = new int[]{4, 5};
+
+            /*NOTE: int[][] arr6 = new int[][] is invalid, first length must be given, 
+            unless we inital it right away like below
+            */
+            int[][] arr6 = new int[][] {
+                new int[]{1,2},
+                new int[]{3, 4, 5},
+                new int[]{6}
+            };
+
+            // NOTE: for jogged array, Length is the elements(rows, subarrays) in it
+            Console.WriteLine(arr6.Length);
+
+            // NOTE: iterate jogged array, same as java, just need to get length of 
+            // each subarray because they may have different length
+            for (int i = 0; i < arr6.Length; i++) {
+                for (int j = 0; j < arr6[i].Length; j++) {
+                    Console.WriteLine("arr6: " + arr6[i][j]);
+                }
+            }
         }
     }
 }

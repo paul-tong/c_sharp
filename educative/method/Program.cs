@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 /*
 NOTE: method notes
@@ -42,6 +43,13 @@ protected internal void MyMethod()
 
 - Parameters
 can have default values (eg, int age = 22)
+
+
+- Exception 
+NOTE: An exception is a runtime error which occurs while executing the program. 
+    try/catch - Do something and catch an error, if it should occur.
+    try/catch/finally - Do something and catch an error if it should occur, but always do the finally.
+    try/finally - Do something, but always do the finally. Any exception that occurs, will be thrown after finally.
 */
 
 
@@ -78,6 +86,40 @@ namespace method
 
             // recursion
             Console.WriteLine(Factorial(4));
+
+
+            /* NOTE: exception handle
+            - can have multiple catch
+            - if not specify exception, will catch all exception
+            - codes in finally block will always be executed
+            */
+            try
+            {
+                string fileContents = new StreamReader(@"log.txt").ReadToEnd();
+                Console.Write(fileContents);
+            }
+            catch (UnauthorizedAccessException e) // Access problems
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (FileNotFoundException e)       // File does not exist
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (IOException e)                // Some other IO problem.
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch // catch all other exceptions
+            {
+                Console.WriteLine("Other exception occurs");
+            }
+            finally 
+            {
+                Console.WriteLine("excute finally block");
+            }
+
+
         }
 
         // age has default value

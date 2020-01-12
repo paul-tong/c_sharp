@@ -1,0 +1,11 @@
+/home/tong/ProgramFile/git/c_sharp/educative/ood/bin/Debug/netcoreapp2.2/ood.deps.json
+/home/tong/ProgramFile/git/c_sharp/educative/ood/bin/Debug/netcoreapp2.2/ood.runtimeconfig.json
+/home/tong/ProgramFile/git/c_sharp/educative/ood/bin/Debug/netcoreapp2.2/ood.runtimeconfig.dev.json
+/home/tong/ProgramFile/git/c_sharp/educative/ood/bin/Debug/netcoreapp2.2/ood.dll
+/home/tong/ProgramFile/git/c_sharp/educative/ood/bin/Debug/netcoreapp2.2/ood.pdb
+/home/tong/ProgramFile/git/c_sharp/educative/ood/obj/Debug/netcoreapp2.2/ood.csprojAssemblyReference.cache
+/home/tong/ProgramFile/git/c_sharp/educative/ood/obj/Debug/netcoreapp2.2/ood.csproj.CoreCompileInputs.cache
+/home/tong/ProgramFile/git/c_sharp/educative/ood/obj/Debug/netcoreapp2.2/ood.AssemblyInfoInputs.cache
+/home/tong/ProgramFile/git/c_sharp/educative/ood/obj/Debug/netcoreapp2.2/ood.AssemblyInfo.cs
+/home/tong/ProgramFile/git/c_sharp/educative/ood/obj/Debug/netcoreapp2.2/ood.dll
+/home/tong/ProgramFile/git/c_sharp/educative/ood/obj/Debug/netcoreapp2.2/ood.pdb

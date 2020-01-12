@@ -99,9 +99,17 @@ namespace ood
             }
         }
 
-        // a public class
+        // a public class need to be hide in drived class
         public void sayHello() {
             Console.WriteLine("I am car");
+        }
+
+        /* NOTE: a public class need to be override in drived class
+        must be virtual so that it can be overriden
+        it has implementation(not abstruct class, which has no implementation)
+        */
+        public virtual void sayHelloVirtual() {
+            Console.WriteLine("I am car virtual");
         }
 
         // constructor, same as java
@@ -144,9 +152,16 @@ namespace ood
             return price;
         }
 
-        // override base class's method
-        public void sayHello() {
+        /* NOTE: cannot override base class's non-virual method -> will have warning
+           but can use new keyword to hide base class's method
+        */
+        public new void sayHello() {
             Console.WriteLine("I am Toyota");
+        }
+
+        // NOTE: override a virtural method, need to have override keyword -> will have warning
+        public override void sayHelloVirtual() {
+            Console.WriteLine("I am Toyota virtual");
         }
     }
 
@@ -195,6 +210,7 @@ namespace ood
             // inheritance
             Toyota t1 = new Toyota();
             t1.sayHello();
+            t1.sayHelloVirtual();
             Console.WriteLine("price: " + t1.getPrice());
         }
     }

@@ -70,6 +70,8 @@ namespace ood
         // a public field
         public string brand;
 
+        // a protected field, accessable to derived classes
+        protected int price = 1000;
 
         // a private field, with set and get methods, same as java
         private string model;
@@ -81,8 +83,6 @@ namespace ood
         public void setModel(String model) {
             this.model = model;
         }
-
-
 
         // a private field, with propertiy to get or set its value
         // NOTE: A property is a member that provides a flexible mechanism to read, write, or compute the value of a private field. 
@@ -99,10 +99,19 @@ namespace ood
             }
         }
 
+        // a public class
+        public void sayHello() {
+            Console.WriteLine("I am car");
+        }
 
         // constructor, same as java
+        public Car() { 
+            Console.WriteLine("car constructor1");
+        }
+
         public Car(String brand) {
             this.brand = brand;
+            Console.WriteLine("car constructor2");
         }
 
         // destructor, same as java, called automaticlly
@@ -112,6 +121,34 @@ namespace ood
         }
     }
 
+
+    // inheritance (extends the car class)
+    class Toyota: Car {
+        /*
+        NOTE: will automatically call Car's constructor(no parameters) first
+        if all Car's constructor needs parameter, it will have error
+        */
+        // public Toyota() {
+        //     Console.WriteLine("toyota constructor1");
+        // }
+
+        /*
+        NOTE: explictly call base class's construcor with base(arguments)
+        */
+        public Toyota(): base("Toyota") {
+            Console.WriteLine("toyota constructor2");
+        }
+
+        // add new method, and access to base class's protected field
+        public int getPrice() {
+            return price;
+        }
+
+        // override base class's method
+        public void sayHello() {
+            Console.WriteLine("I am Toyota");
+        }
+    }
 
     /* NOTE: struct
     - Basically has the same syntax as class
@@ -154,6 +191,11 @@ namespace ood
             // create struct instance
             Point p1 = new Point(1.2, 2.3);
             p1.PrintPoint();
+
+            // inheritance
+            Toyota t1 = new Toyota();
+            t1.sayHello();
+            Console.WriteLine("price: " + t1.getPrice());
         }
     }
 }

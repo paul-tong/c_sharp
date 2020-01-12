@@ -110,7 +110,28 @@ namespace ood
         ~Car(){
             Console.WriteLine("car class destructor");
         }
+    }
 
+
+    /* NOTE: struct
+    - Basically has the same syntax as class
+    - are light version of classes
+    - instances of structs are values while instancs of classes are refereces
+    */
+    public struct Point
+    {
+        public double x, y;
+
+        public Point(double pointX, double pointY)
+        {
+            x = pointX;
+            y = pointY;
+        }
+
+        // QUES: public methods and fields start with Capital letter?
+        public void PrintPoint() {
+            Console.WriteLine("x: {0}, y: {1}", x, y);
+        }
     }
 
     class Program
@@ -130,6 +151,9 @@ namespace ood
             c1.Year = 2020;
             Console.WriteLine("year: {0}", c1.Year);
             
+            // create struct instance
+            Point p1 = new Point(1.2, 2.3);
+            p1.PrintPoint();
         }
     }
 }

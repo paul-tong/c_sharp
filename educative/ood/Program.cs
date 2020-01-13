@@ -65,6 +65,7 @@ note:
 namespace ood
 {
 
+    // class: member, method, property, virtual method/override, hide method/new
     class Car {
 
         // a public field
@@ -186,6 +187,88 @@ namespace ood
         }
     }
 
+
+    // interface
+    interface Animal {
+        // NOTE: can have access modifier, automatically be public
+        void MakeSound(); // has the same method as Pet interface
+
+        void EatFood();
+    }
+
+    interface Pet {
+        void MakeSound();
+
+        void GetPrice();
+    }
+
+    class Dog: Animal, Pet {
+        /* NOTE: implement method from interface, must be public
+         don’t need explicit implementations if multiple interfaces 
+         share the same method, but a common implementation is acceptable
+         will call this method if instance is created by: Dog d = new Dog()
+        */
+        public void MakeSound() {
+            Console.WriteLine("Dog, Wow");
+        }
+
+        // NOTE: explixitly implement common methods in multiple interface
+        // will call this method if instance is created by: Animal a = new Dog()
+        // cannot add public modifier or it will have error(though it is default to be public)
+        void Animal.MakeSound() {
+            Console.WriteLine("Animal, Wow");
+        }
+
+        // will call this method if instance is created by: Pet p = new Dog()
+        void Pet.MakeSound() {
+            Console.WriteLine("Pet, Wow");
+        }
+
+        // need to impelment all methods in the interfaces
+        public void EatFood() {
+            Console.WriteLine("dog eat meat");
+        }
+
+        public void GetPrice() {
+            Console.WriteLine("dog price is 2200");
+        }
+    }
+
+    /* NOTE: abstract class: a class that has abstract method, cannot be initalized
+        The purpose of an abstract class is to provide a common definition of a base class that multiple derived classes can share. 
+      abstract method vs virtual method
+        virtual method is inside a normal class, has implementation, derived class can override it(but not mendatory)
+        abstract method is inside a abstract class, has no implementation, derived class must implement it(or the derived class will also be abstract class)
+      abstract class vs interface
+        can only extends one abstract class, can implement multiple interface
+        abstract class has at least one abstract method, all the methods in interface has no implementation
+        abstract class cannot be initalized, eg, cannot new AbstractClass(). QUES: can be used as type?
+        same as abstract class, interface cannot be initalized, but can be used as type, eg, List<String> l = new ArrayList<>()
+    */
+    abstract class Food {
+
+        // a abstract method(no implementation)
+        public abstract void FoodType();
+
+        // a normal method shared by all derived class
+        public void FoodSayHello() {
+            Console.WriteLine("This is Food!");
+        }
+    }
+
+    // class extends food
+    class Apple: Food {
+        // must override abstract method
+        public override void FoodType() {
+            Console.WriteLine("Food type is fruit");
+        }
+
+        // define new methods besides base class
+        public void GetPrice() {
+            Console.WriteLine("Food price is 22");
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -212,6 +295,27 @@ namespace ood
             t1.sayHello();
             t1.sayHelloVirtual();
             Console.WriteLine("price: " + t1.getPrice());
+
+            // interface
+            // Animal a1 = new Animal(); // cannot create instance of interface
+            Dog d1 = new Dog();
+            Animal a1 = new Dog();
+            Pet pet1 = new Dog();
+            d1.MakeSound(); // call different impelmentation of the same method
+            a1.MakeSound();
+            pet1.MakeSound();
+
+
+            // abstract
+            // Food f1 = new Food(); // cannot create instance of abstract class
+            Food f1 = new Apple();
+            f1.FoodSayHello();
+            f1.FoodType();
+            //f1.GetPrice(); // type is Food, cannot call method that is new defined in Apple
+
+            Apple apple1 = new Apple();
+            apple1.GetPrice();
+            
         }
     }
 }

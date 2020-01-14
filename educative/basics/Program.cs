@@ -82,7 +82,6 @@ namespace basics
             Console.WriteLine((c3 > 10) ? "ternary branch1" : "ternary branch2");
 
 
-
             ///////////////////////////////////////////////////////////////////
             /*
             Loops:
@@ -187,6 +186,69 @@ namespace basics
                     Console.WriteLine("arr6: " + arr6[i][j]);
                 }
             }
+
+
+            
+            ///////////////////////////////////////////////////////////////////
+            /*
+            string: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/
+             */
+            Console.WriteLine("\nString:");
+
+            // NOTE: regular string literal, support escape sequence for special chars
+            // eg, \\ for \, \n, \r
+            string s1 = "c:\\File\\test.txt\n seconde line"; 
+            Console.WriteLine(s1);
+
+            // NOTE: verbatime string literal, has @ in front of ""
+            // the characters between the delimiters are interpreted verbatim
+            // don't support escape sequence, can support multiple lines
+            // ofen used for file path, quate mark needs twice
+            string s2 = @"c:\File\text.txt
+            seconde line ""quote mark needs double"" ";
+            Console.WriteLine(s2);
+            
+            // string is alias for System.String
+            // use new string() only when initial it with char array
+            System.String s3 = new string(new char[]{'a', 'b', 'c'});
+            Console.WriteLine(s3);
+
+            // NOTE: like java, string is immutable, modification will create
+            // a new string, then assign to s3
+            s3 += "def";
+
+            // format string- string interpolation
+            // use $"{variable} lalala" to insert variables into string
+            var tp = (firstName: "peng", lastName: "tong"); // QUES: what's this? like js object?
+            Console.WriteLine($"{tp.firstName} {tp.lastName} is a good student");
+
+            // format string - comosite formatting
+            // use ("{0} lala", vriable) to insert variable into string
+            Console.WriteLine("{0} {1} is a good student", tp.firstName, tp.lastName);
+
+            // Substring[strtIndex, length]
+            Console.WriteLine(s3.Substring(1, 3));
+
+            // access char in string
+            Console.WriteLine(s3[0]);
+
+            // StringBuilder
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("hello ");
+            sb.Append("Tong");
+            Console.WriteLine(sb.ToString());
+
+            // String.Empty, not use ""?
+            string s4 = string.Empty;
+            string s5 = ""; // QUES: not use "" because it can be written as " " be mistake?
+            Console.WriteLine(s4 == s5);
+            Console.WriteLine(s4.Equals(s5));
+
+            // QUES: Compare string, == and equals are the same in string?
+            // Normally, == compares two objects(references)
+            // Equals also compares two objects, unless it has be overriden to compare values
+            Console.WriteLine("123".Equals("123"));
+            Console.WriteLine("123" == "123"); // QUES: why also return true?
         }
     }
 }

@@ -1,7 +1,27 @@
-﻿using System;
+﻿using System; // NOTE: System is a namespace
 
+/* NOTE: name convention
+The two main Capitalizations are called camelCase and PascalCase.
+The basic rules are:
+
+Class use PascalCase
+properties and methods always use PascalCase
+public members (fields, consts) use PascalCase
+interface use pascalCase with I in front: eg, IMyInterface
+local variables use camelCase
+parameters use camelCase
+
+And although the documentation states that "Internal and private fields are not covered by guidelines" there are some clear conventions:
+private fields use camelCase
+QUES: ? private fields that back a property prefix a _
+*/
+
+/*
+NOTE: namespace can be used to organize classes
+     control the scope of class and method names in larger programming projects
+*/
 namespace basics
-{
+{       
     class Program
     {
         static void Main(string[] args)
@@ -249,6 +269,32 @@ namespace basics
             // Equals also compares two objects, unless it has be overriden to compare values
             Console.WriteLine("123".Equals("123"));
             Console.WriteLine("123" == "123"); // QUES: why also return true?
+
+
+            ///////////////////////////////////////////////////////////////////
+            /*
+            Namespace: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/namespaces/using-namespaces
+             */
+            Console.WriteLine("\nNamespace:");
+            SampleNameSpace1.SamepleClass.SampleMethod(); // call methods in different namespace
+            SampleNameSpace2.SamepleClass.SampleMethod();
         }
     }
+
+    // NOTE: in different namespace can have class, method with same names
+    namespace SampleNameSpace1 {
+        class SamepleClass {
+            public static void SampleMethod() {
+                Console.WriteLine("name space method1");
+            }
+        }
+    }
+    
+    namespace SampleNameSpace2 {
+        class SamepleClass {
+            public static void SampleMethod() {
+                Console.WriteLine("name space method2");
+            }
+        }
+    }    
 }

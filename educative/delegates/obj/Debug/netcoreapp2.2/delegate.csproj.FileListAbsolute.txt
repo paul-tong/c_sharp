@@ -15,7 +15,6 @@
 /home/tong/ProgramFile/git/c_sharp/educative/delegates/bin/Debug/netcoreapp2.2/delegate.dll
 /home/tong/ProgramFile/git/c_sharp/educative/delegates/bin/Debug/netcoreapp2.2/delegate.pdb
 /home/tong/ProgramFile/git/c_sharp/educative/delegates/obj/Debug/netcoreapp2.2/delegate.csprojAssemblyReference.cache
-/home/tong/ProgramFile/git/c_sharp/educative/delegates/obj/Debug/netcoreapp2.2/delegate.csproj.CoreCompileInputs.cache
 /home/tong/ProgramFile/git/c_sharp/educative/delegates/obj/Debug/netcoreapp2.2/delegate.AssemblyInfoInputs.cache
 /home/tong/ProgramFile/git/c_sharp/educative/delegates/obj/Debug/netcoreapp2.2/delegate.AssemblyInfo.cs
 /home/tong/ProgramFile/git/c_sharp/educative/delegates/obj/Debug/netcoreapp2.2/delegate.dll

@@ -29,6 +29,8 @@ namespace TodoApi.Controllers
         }
 
         // GET: api/TodoItems/5
+        // NOTE: return type is ActionResult, ASP .net core automatically serializes
+        //  object to JSON
         [HttpGet("{id}")]
         public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
         {
@@ -45,6 +47,7 @@ namespace TodoApi.Controllers
         // PUT: api/TodoItems/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+        // NOTE: PUT require passing entire ToDoItem object, use HTTP PATCH for partial updates
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
         {

@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using TodoApi.Models;
 
 namespace TodoApi
 {
@@ -25,6 +27,11 @@ namespace TodoApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // NOTE: register db context, use in memory database
+            // QUES: need to change it if using mysql or mogonDB?
+            services.AddDbContext<TodoContext>(opt =>
+               opt.UseInMemoryDatabase("TodoList")); 
+
             services.AddControllers();
         }
 

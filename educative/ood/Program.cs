@@ -69,39 +69,51 @@ namespace ood
     class Car {
 
         // a public field
-        public string brand;
+        public string Brand;
 
         // a protected field, accessable to derived classes
-        protected int price = 1000;
+        protected int Price = 1000;
 
         // a private field, with set and get methods, same as java
         private string model;
 
-        public string getModel() {
+        public string GetModel() {
             return model;
         }
 
-        public void setModel(String model) {
+        public void SetModel(String model) {
             this.model = model;
         }
 
         // a private field, with propertiy to get or set its value
         // NOTE: A property is a member that provides a flexible mechanism to read, write, or compute the value of a private field. 
-        private int year;
+        private int _year; // NOTE: back field for property name convention: _camelCase
 
-        // property to get/ set value of a private field
+        /*
+        NOTE: Property
+        A property is a member that provides a flexible mechanism to read, write, 
+        or compute the value of a private field. Properties can be used as if 
+        they are public data members, but they are actually special methods called accessors. 
+        */
+
+        // property used as accessor method: to get/ set value of a private field
         public int Year {
             get {
-                return year;
+                return _year;
             }
 
             set {
-                year = value; // NOTE: value is the keyword for set
+                _year = value; // NOTE: value is the keyword for set
             }
         }
 
+        // NOTE: property used as public data member
+        // basicly same as public data member, eg, public int Mile
+        public int Mile { get; set; } // can read, write value
+        public string Color { get; } // read only: can only get value
+
         // a public class need to be hide in drived class
-        public void sayHello() {
+        public void SayHello() {
             Console.WriteLine("I am car");
         }
 
@@ -109,7 +121,7 @@ namespace ood
         must be virtual so that it can be overriden
         it has implementation(not abstruct class, which has no implementation)
         */
-        public virtual void sayHelloVirtual() {
+        public virtual void SayHelloVirtual() {
             Console.WriteLine("I am car virtual");
         }
 
@@ -119,7 +131,7 @@ namespace ood
         }
 
         public Car(String brand) {
-            this.brand = brand;
+            this.Brand = brand;
             Console.WriteLine("car constructor2");
         }
 
@@ -149,19 +161,19 @@ namespace ood
         }
 
         // add new method, and access to base class's protected field
-        public int getPrice() {
-            return price;
+        public int GetPrice() {
+            return Price;
         }
 
         /* NOTE: cannot override base class's non-virual method -> will have warning
            but can use new keyword to hide base class's method
         */
-        public new void sayHello() {
+        public new void SayHello() {
             Console.WriteLine("I am Toyota");
         }
 
         // NOTE: override a virtural method, need to have override keyword -> will have warning
-        public override void sayHelloVirtual() {
+        public override void SayHelloVirtual() {
             Console.WriteLine("I am Toyota virtual");
         }
     }
@@ -173,17 +185,17 @@ namespace ood
     */
     public struct Point
     {
-        public double x, y;
+        public double X, Y;
 
         public Point(double pointX, double pointY)
         {
-            x = pointX;
-            y = pointY;
+            X = pointX;
+            Y = pointY;
         }
 
         // QUES: public methods and fields start with Capital letter?
         public void PrintPoint() {
-            Console.WriteLine("x: {0}, y: {1}", x, y);
+            Console.WriteLine("x: {0}, y: {1}", X, Y);
         }
     }
 
@@ -276,11 +288,11 @@ namespace ood
             Car c1 = new Car("toyota");
             
             // directly access public field
-            Console.WriteLine("brand: {0}", c1.brand);
+            Console.WriteLine("brand: {0}", c1.Brand);
 
             // access private filed through get/set
-            c1.setModel("t22");
-            Console.WriteLine("model: {0}", c1.getModel());
+            c1.SetModel("t22");
+            Console.WriteLine("model: {0}", c1.GetModel());
 
             // access private field through property
             c1.Year = 2020;
@@ -292,9 +304,9 @@ namespace ood
 
             // inheritance
             Toyota t1 = new Toyota();
-            t1.sayHello();
-            t1.sayHelloVirtual();
-            Console.WriteLine("price: " + t1.getPrice());
+            t1.SayHello();
+            t1.SayHelloVirtual();
+            Console.WriteLine("price: " + t1.GetPrice());
 
             // interface
             // Animal a1 = new Animal(); // cannot create instance of interface

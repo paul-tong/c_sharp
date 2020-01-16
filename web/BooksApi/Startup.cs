@@ -53,7 +53,13 @@ namespace BooksApi
             // NOTE: add BookService to DI, so it can be retrived by others
             services.AddSingleton<BookService>();
 
-            services.AddControllers();
+            /* NOTE:  property names in the web API's serialized JSON 
+            response match their corresponding property names in the CLR 
+            object type. For example, the Book class's Author property 
+            serializes as Author.
+            */
+            services.AddControllers()
+                .AddNewtonsoftJson(options => options.UseMemberCasing());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

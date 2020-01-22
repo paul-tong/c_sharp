@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/Creational.csproj",
-      "projectName": "Creational",
-      "projectPath": "/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/Creational.csproj",
+      "projectUniqueName": "/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/builder.csproj",
+      "projectName": "builder",
+      "projectPath": "/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/builder.csproj",
       "packagesPath": "/home/tong/.nuget/packages/",
-      "outputPath": "/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/obj/",
+      "outputPath": "/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

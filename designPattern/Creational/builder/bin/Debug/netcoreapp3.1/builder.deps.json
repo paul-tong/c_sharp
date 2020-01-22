@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Creational/1.0.0": {
+      "builder/1.0.0": {
         "runtime": {
-          "Creational.dll": {}
+          "builder.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Creational/1.0.0": {
+    "builder/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

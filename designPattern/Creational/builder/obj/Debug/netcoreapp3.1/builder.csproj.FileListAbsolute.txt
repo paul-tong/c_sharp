@@ -1,0 +1,11 @@
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/bin/Debug/netcoreapp3.1/builder
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/bin/Debug/netcoreapp3.1/builder.deps.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/bin/Debug/netcoreapp3.1/builder.runtimeconfig.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/bin/Debug/netcoreapp3.1/builder.runtimeconfig.dev.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/bin/Debug/netcoreapp3.1/builder.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/bin/Debug/netcoreapp3.1/builder.pdb
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/obj/Debug/netcoreapp3.1/builder.csprojAssemblyReference.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/obj/Debug/netcoreapp3.1/builder.AssemblyInfoInputs.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/obj/Debug/netcoreapp3.1/builder.AssemblyInfo.cs
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/obj/Debug/netcoreapp3.1/builder.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/Creational/builder/obj/Debug/netcoreapp3.1/builder.pdb

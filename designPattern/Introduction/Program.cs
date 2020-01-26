@@ -3,6 +3,7 @@ NOTE: Resouces
 https://www.educative.io/courses/software-design-patterns-best-practices
 http://best-practice-software-engineering.ifs.tuwien.ac.at/patterns.html
 https://javarevisited.blogspot.com/2018/07/10-object-oriented-design-principles.html
+Book: first head design patterns
 
 NOTE: What and Why
 Why do we need patterns? 

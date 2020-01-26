@@ -1,0 +1,11 @@
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/bin/Debug/netcoreapp3.1/c1_intro_strategy
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/bin/Debug/netcoreapp3.1/c1_intro_strategy.deps.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/bin/Debug/netcoreapp3.1/c1_intro_strategy.runtimeconfig.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/bin/Debug/netcoreapp3.1/c1_intro_strategy.runtimeconfig.dev.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/bin/Debug/netcoreapp3.1/c1_intro_strategy.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/bin/Debug/netcoreapp3.1/c1_intro_strategy.pdb
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/obj/Debug/netcoreapp3.1/c1_intro_strategy.csprojAssemblyReference.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/obj/Debug/netcoreapp3.1/c1_intro_strategy.AssemblyInfoInputs.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/obj/Debug/netcoreapp3.1/c1_intro_strategy.AssemblyInfo.cs
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/obj/Debug/netcoreapp3.1/c1_intro_strategy.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c1_intro_strategy/obj/Debug/netcoreapp3.1/c1_intro_strategy.pdb

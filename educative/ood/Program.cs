@@ -112,12 +112,12 @@ namespace ood
         public int Mile { get; set; } // can read, write value
         public string Color { get; } // read only: can only get value
 
-        // a public class need to be hide in drived class
+        // a public method (need to be hidden if need to overriden in derived class)
         public void SayHello() {
             Console.WriteLine("I am car");
         }
 
-        /* NOTE: a public class need to be override in drived class
+        /* NOTE: a public method need to be override in drived class
         must be virtual so that it can be overriden
         it has implementation(not abstruct class, which has no implementation)
         */
@@ -202,7 +202,7 @@ namespace ood
 
     // interface
     interface Animal {
-        // NOTE: can have access modifier, automatically be public
+        // NOTE: can't have access modifier, automatically be public
         void MakeSound(); // has the same method as Pet interface
 
         void EatFood();
@@ -254,7 +254,7 @@ namespace ood
       abstract class vs interface
         can only extends one abstract class, can implement multiple interface
         abstract class has at least one abstract method, all the methods in interface has no implementation
-        abstract class cannot be initalized, eg, cannot new AbstractClass(). QUES: can be used as type?
+        abstract class cannot be initalized, eg, cannot new AbstractClass(). QUES: can be used as type? -> yes
         same as abstract class, interface cannot be initalized, but can be used as type, eg, List<String> l = new ArrayList<>()
     */
     abstract class Food {

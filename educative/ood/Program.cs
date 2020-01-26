@@ -258,6 +258,7 @@ namespace ood
         same as abstract class, interface cannot be initalized, but can be used as type, eg, List<String> l = new ArrayList<>()
     */
     abstract class Food {
+        public string price = "22.2";
 
         // a abstract method(no implementation)
         public abstract void FoodType();

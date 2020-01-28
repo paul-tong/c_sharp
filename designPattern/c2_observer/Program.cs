@@ -26,7 +26,7 @@ namespace c2_observer
 
   public class WeatherData : Subject
   {
-      List<Observer> observers = new ArrayList<Observer>;
+      private List<int> observers = new List<int>;
   }
 
   class Program

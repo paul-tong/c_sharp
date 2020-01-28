@@ -294,6 +294,7 @@ namespace basics
             Console.WriteLine("\nList:");
 
             // create
+            // NOTE: list can directly use int type
             List<int> list1 = new List<int>();
 
             // add

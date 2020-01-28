@@ -1,0 +1,11 @@
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/bin/Debug/netcoreapp3.1/c2_observer
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/bin/Debug/netcoreapp3.1/c2_observer.deps.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/bin/Debug/netcoreapp3.1/c2_observer.runtimeconfig.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/bin/Debug/netcoreapp3.1/c2_observer.runtimeconfig.dev.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/bin/Debug/netcoreapp3.1/c2_observer.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/bin/Debug/netcoreapp3.1/c2_observer.pdb
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/obj/Debug/netcoreapp3.1/c2_observer.csprojAssemblyReference.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/obj/Debug/netcoreapp3.1/c2_observer.AssemblyInfoInputs.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/obj/Debug/netcoreapp3.1/c2_observer.AssemblyInfo.cs
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/obj/Debug/netcoreapp3.1/c2_observer.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c2_observer/obj/Debug/netcoreapp3.1/c2_observer.pdb

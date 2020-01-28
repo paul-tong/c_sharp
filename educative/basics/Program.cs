@@ -1,4 +1,5 @@
 ﻿using System; // NOTE: System is a namespace
+using System.Collections.Generic;
 
 /* NOTE: name convention
 The two main Capitalizations are called camelCase and PascalCase.
@@ -278,7 +279,44 @@ namespace basics
             Console.WriteLine("\nNamespace:");
             SampleNameSpace1.SamepleClass.SampleMethod(); // call methods in different namespace
             SampleNameSpace2.SamepleClass.SampleMethod();
+
+            ///////////////////////////////////////////////////////////////////
+            /*
+            List: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.8
+            List<T> in c# is arrayList in java
+            LinkedList<T> in c# is linkedList in java
+            ArrayList in c# is deprecate, should avoid using it (it has no data type, stores object referece)
+             */
+            Console.WriteLine("\nList:");
+
+            // create
+            List<int> list1 = new List<int>();
+
+            // add
+            list1.Add(1);
+            list1.Add(2);
+            list1.Add(3);
+            list1.Add(4);
+
+            // get
+            Console.WriteLine(list1[0]);
+
+            // modify
+            list1[0] = 0;
+
+            // contain
+            Console.WriteLine(list1.Contains(0));
+            Console.WriteLine(list1.Contains(1));
+
+            // remove
+            list1.RemoveAt(3);
+
+            // iterate
+            foreach (int i in list1) {
+                Console.WriteLine("i: {0}", i);
+            }
         }
+            
     }
 
     // NOTE: in different namespace can have class, method with same names

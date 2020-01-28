@@ -8,7 +8,28 @@ news subscriber(observer) get nodification from publisher(subject) when news com
 */
 namespace c2_observer
 {
-    class Program
+    public interface Subject {
+        void registerObserver(Observer o);
+        void removeObserver(Observer o);
+
+        void notifyObservers();
+    }
+
+    public interface Observer {
+        void update(float temp, float humidity, float pressure);
+    }
+
+    public interface DisplayElement {
+        void display();
+    }
+
+
+  public class WeatherData : Subject
+  {
+      List<Observer> observers = new ArrayList<Observer>;
+  }
+
+  class Program
     {
         static void Main(string[] args)
         {

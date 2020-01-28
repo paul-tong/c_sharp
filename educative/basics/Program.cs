@@ -280,6 +280,10 @@ namespace basics
             SampleNameSpace1.SamepleClass.SampleMethod(); // call methods in different namespace
             SampleNameSpace2.SamepleClass.SampleMethod();
 
+
+
+
+
             ///////////////////////////////////////////////////////////////////
             /*
             List: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.8

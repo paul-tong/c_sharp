@@ -59,8 +59,9 @@ namespace c1_intro_strategy {
         //      data type should be the interface, instead of specific class
         protected FlyBehavior fb;
 
-        // NOTE: method to set the behavior, so we can modify it in the runtime
-        // make the program more flexible
+        // NOTE: design principle -> code open to extenstion ,close to change
+        //  method to set the behavior, so we can modify it in the runtime
+        //  make the program more flexible, extendable
         public void SetFlyBehavior(FlyBehavior fb) {
             this.fb = fb;
         }

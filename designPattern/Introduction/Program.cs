@@ -65,9 +65,21 @@ namespace introduction
 {
     class Program
     {
+        public void test() {
+            for (int i = 0; i < 10; i++) {
+                Console.WriteLine("this is world");
+                Console.WriteLine("this is world");
+
+            }
+        }
+
+        private void test2() {
+
+        }
+        
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }

@@ -2,6 +2,16 @@
 
 /*
 The Factory Method Pattern:
+Abstract creator delares an abstract method to create object, then
+use behaviors of the object; Concrete creater extends the abstract 
+creator, implement the abstract method to create concrete object.
+
+Factory Method relies on inheritance: object creation is delegated 
+to subclasses which implement the factory method to create objects.
+
+The intent of Factory Method is to allow a class to defer
+instantiation to its subclasses. So we can promote loose coupling 
+by reducing the dependency of our application on concrete classes
 */
 namespace factoryMethod
 {
@@ -10,9 +20,12 @@ namespace factoryMethod
     // it doesn't know how to create pizza, defer the piazza creation to its subclass
     public abstract class PizzaStore {
         public Pizza OrderPizza(string type) {
-            // need to create piazza by calling an abstract method
+            // instead of using new Piazza(), use an abstract method to create piazza
+            // NOTE: Pizza is an interface/abstract class
             Pizza pizza = createPizza(type);
 
+            // NOTE: make use of the abstract pizza, just need to know which
+            // behaviors it support, dosen't need to know the concrete type of the pizza
             pizza.prepare();
             pizza.cut();
 
@@ -25,10 +38,12 @@ namespace factoryMethod
         public abstract Pizza createPizza(string type);
     }
 
-    // NOTE: concrete class extends abstract class, implement abstract method
+    // NOTE: concrete class extends abstract class,
+    // implement abstract method to create concrete pizza
     // different store can create different pizza
+    // NOTE: concrete store create concrete pizza (though the data type of pizza is still abstract)
     public class NYPizzaStore: PizzaStore {
-        // implement abstract method
+        // implement abstract method to create concrete pizza
         public override Pizza createPizza(string type) {
             switch(type) {
                 case "cheese": 
@@ -55,7 +70,7 @@ namespace factoryMethod
     }    
 
 
-    // abstract class to reprensent the product
+    // abstract class to represent the product
     public abstract class Pizza {
         protected string name;
 

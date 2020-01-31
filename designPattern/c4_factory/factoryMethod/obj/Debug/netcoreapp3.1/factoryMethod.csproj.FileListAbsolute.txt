@@ -1,0 +1,11 @@
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/bin/Debug/netcoreapp3.1/factoryMethod
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/bin/Debug/netcoreapp3.1/factoryMethod.deps.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/bin/Debug/netcoreapp3.1/factoryMethod.runtimeconfig.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/bin/Debug/netcoreapp3.1/factoryMethod.runtimeconfig.dev.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/bin/Debug/netcoreapp3.1/factoryMethod.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/bin/Debug/netcoreapp3.1/factoryMethod.pdb
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/obj/Debug/netcoreapp3.1/factoryMethod.csprojAssemblyReference.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/obj/Debug/netcoreapp3.1/factoryMethod.AssemblyInfoInputs.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/obj/Debug/netcoreapp3.1/factoryMethod.AssemblyInfo.cs
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/obj/Debug/netcoreapp3.1/factoryMethod.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c4_factory/factoryMethod/obj/Debug/netcoreapp3.1/factoryMethod.pdb

@@ -2,7 +2,8 @@
 
 /*
 The Factory Method Pattern:
-Abstract creator delares an abstract method to create object, then
+Instead of directly using NEW to create an object, the Abstract 
+creator delares an abstract method to create object, then
 use behaviors of the object; Concrete creater extends the abstract 
 creator, implement the abstract method to create concrete object.
 

@@ -1,0 +1,11 @@
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/bin/Debug/netcoreapp3.1/c5_singleton
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/bin/Debug/netcoreapp3.1/c5_singleton.deps.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/bin/Debug/netcoreapp3.1/c5_singleton.runtimeconfig.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/bin/Debug/netcoreapp3.1/c5_singleton.runtimeconfig.dev.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/bin/Debug/netcoreapp3.1/c5_singleton.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/bin/Debug/netcoreapp3.1/c5_singleton.pdb
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/obj/Debug/netcoreapp3.1/c5_singleton.csprojAssemblyReference.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/obj/Debug/netcoreapp3.1/c5_singleton.AssemblyInfoInputs.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/obj/Debug/netcoreapp3.1/c5_singleton.AssemblyInfo.cs
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/obj/Debug/netcoreapp3.1/c5_singleton.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/obj/Debug/netcoreapp3.1/c5_singleton.pdb

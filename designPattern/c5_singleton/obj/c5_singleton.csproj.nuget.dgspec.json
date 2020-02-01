@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/c5_singleton.csproj": {}
+  },
+  "projects": {
+    "/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/c5_singleton.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/c5_singleton.csproj",
+        "projectName": "c5_singleton",
+        "projectPath": "/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/c5_singleton.csproj",
+        "packagesPath": "/home/tong/.nuget/packages/",
+        "outputPath": "/home/tong/ProgramFile/git/c_sharp/designPattern/c5_singleton/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/tong/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

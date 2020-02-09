@@ -1,0 +1,11 @@
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/bin/Debug/netcoreapp3.1/c6_command
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/bin/Debug/netcoreapp3.1/c6_command.deps.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/bin/Debug/netcoreapp3.1/c6_command.runtimeconfig.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/bin/Debug/netcoreapp3.1/c6_command.runtimeconfig.dev.json
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/bin/Debug/netcoreapp3.1/c6_command.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/bin/Debug/netcoreapp3.1/c6_command.pdb
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/obj/Debug/netcoreapp3.1/c6_command.csprojAssemblyReference.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/obj/Debug/netcoreapp3.1/c6_command.AssemblyInfoInputs.cache
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/obj/Debug/netcoreapp3.1/c6_command.AssemblyInfo.cs
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/obj/Debug/netcoreapp3.1/c6_command.dll
+/home/tong/ProgramFile/git/c_sharp/designPattern/c6_command/obj/Debug/netcoreapp3.1/c6_command.pdb

@@ -57,7 +57,7 @@ namespace c5_singleton
     }
 
     /*
-    NOTE: handle multi thread - lock with double check
+    NOTE: handle multi thread - initial the instance when declare it
     
     initial the instance when declare it, Using this approach, we rely on 
     the system to create the unique instance of the Singleton when the class 
